@@ -1,0 +1,51 @@
+@media only screen and (max-width: 768px) 
+{
+    body
+    {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container
+    {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .logo__content
+    {
+        height: 15%;
+    }
+
+    .form__content
+    {
+        height: 85%
+    }
+
+    .form
+    {
+        width: 90%;
+        height: 95%;
+    }
+
+    .combos__content
+    {
+        width: 40%;
+    }
+
+    .btn__content
+    {
+        height: 20%;
+    }
+
+    .info__finish
+    {
+        height: 45%;
+    }
+
+    .contentDescription
+    {
+        padding: 10px;
+        font-size: 9pt;
+    }
+}

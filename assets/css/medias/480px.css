@@ -1,0 +1,84 @@
+@media only screen and (max-width: 480px) 
+{
+    body
+    {
+        width: 100vw;
+        height: 250vh;
+    }
+
+    .degradeImg
+    {
+        position: fixed;
+        height: 100vh;
+    }
+
+    .background
+    {
+        position: fixed;
+        height: 100vh;
+    }
+
+    .container
+    {
+        width: 100vw;
+        height: 250vh;
+    }
+
+    .logo__content
+    {
+        height: 10%;
+    }
+
+    .form__content
+    {
+        height: 90%
+    }
+
+    .form
+    {
+        width: 95%;
+        height: 95%;
+    }
+
+    .infoPersonal
+    {
+        flex-direction: column;
+        height: 10%;
+    }
+
+        .input__content
+        {
+            width: 100%;
+        }
+
+        .input__personal
+        {
+            width: 100%;
+        }
+
+    .infoProduct
+    {
+        flex-direction: column;
+    }
+
+        .combos__content
+        {
+            width: 100%;
+        }
+
+    .btn__content
+    {
+        height: 10%;
+    }
+
+    .info__finish
+    {
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .input__pay, .pay__content, .input__description, .description__content
+    {
+        width: 100%;
+    }
+}

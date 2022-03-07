@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+
+:root
+{
+    --primary-color: rgb(255, 177, 32);
+    --second-color: rgba(252, 255, 47, 0.377);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    color: rgba(255, 255, 255, 0.596);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.747)), url(/assets/img/bg.jpg); */  
+    width: 100vw;
+    height: 100vh;
+}
+
+.degradeImg
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.547));
+}
+
+.background
+{
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo__content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    animation:float 2s ease-in-out infinite;
+}
+.logo__content i
+{
+    margin-right: 15px;
+}
+
+.icon__logo
+{
+    text-align: center;
+    font-size: 30pt;
+    color: var(--primary-color);
+}
+
+/*========= FORM =========*/
+
+.form__content
+{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form
+{
+    width: 60%;
+    height: 95%;
+    border-radius: 15px;
+    background-color: rgba(189, 189, 189, 0.075);
+    padding: 20px;
+    box-shadow: 0 0 40px .5px rgba(0, 0, 0, 0.301);
+}
+
+
+/*========= INFO PERSONAL =========*/
+
+
+.infoPersonal
+{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+}
+
+.input__content
+{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__personal
+{
+    position: relative;
+    display: block;
+    border: 0;
+    border-bottom: 2px solid var(--second-color);
+    background: transparent;
+    color: white;
+    height: 40px;
+    width: 100%;
+    transition: .3s all;
+}
+
+.label_personal
+{
+    color: white;
+    position: absolute;
+    top: 5px;
+    transition: .3s;
+}
+
+    .input__content.focus .label_personal
+    {
+        transform: translateY(-20px);
+        font-size: 10pt;
+    }
+    .input__content.focus .input__personal
+    {
+        border-bottom: 2px solid var(--primary-color);
+    }
+
+.name__content, .lastName__content
+{
+    width: 35%;
+}
+
+.phone__content
+{
+    width: 20%;
+}
+
+
+
+/*========= INFO PRODUCT =========*/
+
+.infoProduct
+{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/*========= COMBOS =========*/
+
+.combos__content
+{
+    margin-top: 20px;
+}
+
+.combos__content select
+{
+    border: none;
+    padding: 10px;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 100%;
+}
+
+.combos__content option
+{
+    background: black;
+    color: white;
+    border: 1px solid var(--second-color);
+}
+
+.combos__content select, option
+{
+    font-size: 8pt;
+    font-weight: 700;
+}
+
+.tittle
+{
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*========= ADDITIONAL =========*/
+
+.additional__content
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.check
+{
+    display: flex;
+    align-items: center;
+}
+
+.check label
+{
+    font-size: 10pt;
+    margin-left: 10px;
+}
+
+
+/*========= DELIVERY =========*/
+
+.delivery__content
+{
+    margin-top: 20px;
+}
+
+.radio
+{
+    display: flex;
+    align-items: center;
+}
+
+.delivery__content .radio label
+{
+    font-size: 11pt;
+    margin-left: 10px;
+}
+
+.delivery__content .radio label strong
+{
+    color: rgb(77, 255, 136);
+}
+
+/*========= BTN =========*/
+
+.btn__content
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn
+{
+    border: none;
+    background: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 10px 20px;
+}
+
+/*========= Finish =========*/
+
+.info__finish
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*========= VALOR PEDIDO =========*/
+
+.info__finish
+{
+    width: 100%;
+    height: 50%;
+}
+
+.pay__content
+{
+    width: 30%;
+    height: 100%;
+}
+
+.input__pay, .input__description
+{   
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description__content
+{
+    width: 60%;
+    height: 100%;
+}
+
+
+
+@keyframes float
+{
+	0%
+	{
+		transform: translateY(0px);  
+	}
+	50%
+	{
+		transform: translateY(-10px);
+	}
+	100%
+	{
+		transform: translateY(0px);
+	}
+}
+
+strong
+{
+    font-size: 10pt;
+    font-weight: 500;
+    color: rgb(0, 255, 106);
+}
+
+.contentPay
+{
+    font-size: 40pt;
+    color: rgb(0, 255, 106);
+    text-align: center;
+    font-weight: 600;
+}
+
+.contentPay span
+{
+    font-size: 15pt;
+    color: white;
+}
+
+.contentDescription
+{
+    font-size: 10pt;
+    color: white;
+}
+
+.contentDescription span
+{
+    font-size: 12pt;
+    color: var(--primary-color);
+    font-weight: 600;
+}

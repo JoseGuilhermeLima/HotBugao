@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ====== Icons SVG ====== -->
+    <script src="https://kit.fontawesome.com/099b9c0cc1.js" crossorigin="anonymous"></script>
+
+    <!-- ====== CSS ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/medias/768px.css">
+    <link rel="stylesheet" href="assets/css/medias/480px.css">
+
+    <title>HotBurgão</title>
+</head>
+<body>
+    <div class="degradeImg"></div>
+    <img class="background" src="assets/img/bg.jpg" alt="">
+    <main>
+        <div class="container">
+            <div class="logo__content">
+                <i class="fas fa-hamburger icon__logo"></i>
+                <h1 class="icon__logo">HotBurgão</h1>
+            </div>
+
+            <div class="form__content">
+                <form class="form" autocomplete="off">
+                    <div class="infoPersonal">
+                        <div class="input__content name__content" >
+                            <label class="label_personal" id="Name">Nome</label>
+                            <input class="input__personal" type="text" required>
+                        </div>
+                        <div class="input__content lastName__content" >
+                            <label class="label_personal" id="LastName">Sobrenome</label>
+                            <input class="input__personal" type="text" required>
+                        </div>
+                        <div class="input__content phone__content">
+                            <label class="label_personal" id="Phone">Phone</label>
+                            <input class="input__personal" type="number" required>
+                        </div>
+                    </div>
+                    <div class="infoProduct">
+                        <div class="combos__content">
+                            <p class="tittle combos__tittle">Combos</p>
+                            <select name="Combos" required id="Combos" onchange="Combo()">
+                                <option value="xsalad">[R$ 12,90] X Salada - Hamburguer, Queijo, Salada e Maionese</option>
+                                <option value="xdouble">[R$ 14,90] X Dobro - 2 Hamburgueres, Queijo e Maionese</option>
+                                <option value="xtudo">[R$ 19,90] X Tudo - 2 Hamburgueres, Queijo, Salada e Maionese</option>
+                            </select>
+                        </div>
+                        <div class="additional__content">
+                            <p class="tittle">Adicionais <strong>+ R$ 2,00</strong></p>
+                            <div class="check">
+                                <input type="checkbox" class="checkItem" value=" Cheddar">
+                                <label>Cheddar</label>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" class="checkItem" value=" Bacon">
+                                <label>Bacon</label>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" class="checkItem" value=" Hamburguer">
+                                <label>Hambuguer</label>
+                            </div>
+                        </div>
+
+                        <div class="delivery__content">
+                            <p class="tittle">Forma de envio</p>
+                            <div class="radio">
+                                <input type="radio" name="delivery" class="radioItem" value="Entrega">
+                                <label>Entrega <strong>R$ 9,90</strong></label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="delivery" checked class="radioItem" value="Retirada">
+                                <label>Retirada <strong>free</strong></label>
+                            </div>
+                        </div>                           
+                    </div>
+                    <div class="btn__content">
+                        <button class="btn" id="Calcular">Calcular</button>
+                        <button class="btn" onclick="window.location.reload()">Novo Pedido</button>
+                        <button class="btn" value="Print this page" onClick="print()">Recibo</button>
+                    </div>
+                    <div class="info__finish">                   
+                        <div class="pay__content">
+                            <p class="tittle">Valor total</p>
+                            <div class="input__pay" id="Pay">
+                            </div>
+                        </div>
+                        <div class="description__content">
+                            <p class="tittle">Resumo do pedido</p>
+                            <div class="input__description" id="Description">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="assets/JS/index.js"></script>
+    <script src="assets/JS/effectInput.js"></script>
+</body>
+</html>
